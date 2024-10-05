@@ -1,0 +1,20 @@
+<h1>{{title}}</h1>
+<h2>{{add}}</h2>
+<h2>{{sub}}</h2>
+
+<button [disabled]="disable">click</button>
+<br>
+<button [disabled]="enabled">click</button>
+
+<button (click)="submitmethod()">getTitle</button>
+<h2>{{name}}</h2>
+
+<input type="text" [(ngModel)]="word">
+<h2>{{word}}</h2>
+
+<input type="number" [(ngModel)]="num1">
+<input type="number"[(ngModel)]="num2">
+
+<button (click)="submitnum()">addButton</button>
+<h2>{{sum}}</h2>
+
